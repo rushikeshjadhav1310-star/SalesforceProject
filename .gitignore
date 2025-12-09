@@ -1,19 +1,46 @@
-# Salesforce DX
-.sfdx/
-.cache/
-logs/
-*.log
-coverage/
-
-# Local config
-*.json
-
-# VS Code
-.vscode/
-
-# Node
+# Ignore node_modules and dependencies
 node_modules/
+bower_components/
 
-# OS files
+# Ignore build and log files
+dist/
+build/
+tmp/
+temp/
+*.log
+
+# Ignore system files
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Ignore VS Code settings (optional)
+.vscode/
+
+# Ignore environment and secret files
+.env
+.env.local
+.env.*.local
+
+# Ignore compiled files
+*.class
+*.pyc
+*.o
+*.so
+*.dll
+*.exe
+
+# Ignore package lock files (optional)
+package-lock.json
+yarn.lock
+
+# Ignore Salesforce-specific files (if applicable)
+.sfdx/
+*.scratch-def.json
+*.org-meta.xml
+
+# Keep empty folders (preserve structure)
+# Add a .gitkeep file manually in empty folders you want to track
+!.gitkeep
